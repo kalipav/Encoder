@@ -1,7 +1,7 @@
-///////////////////////////
-// Автор:  Kalinin Pavel //
-// Файл:   Encoder.h     //
-// Создан: 04.05.2019    //
+п»ї///////////////////////////
+// РђРІС‚РѕСЂ:  Kalinin Pavel //
+// Р¤Р°Р№Р»:   Encoder.h     //
+// РЎРѕР·РґР°РЅ: 04.05.2019    //
 ///////////////////////////
 
 #ifndef ENCODER_H
@@ -10,8 +10,8 @@
 #include <QDialog>
 #include "ui_Encoder.h"
 
-#define ENCODE_FILE_NAME "EncodeData.dat" // имя зашифрованного файла
-#define NOT_ENCODE_FILE_NAME "Data.dat" // имя нешифрованного файла
+#define ENCODE_FILE_NAME "EncodeData.dat" // РёРјСЏ Р·Р°С€РёС„СЂРѕРІР°РЅРЅРѕРіРѕ С„Р°Р№Р»Р°
+#define NOT_ENCODE_FILE_NAME "Data.dat" // РёРјСЏ РЅРµС€РёС„СЂРѕРІР°РЅРЅРѕРіРѕ С„Р°Р№Р»Р°
 
 class Encoder : public QDialog, public Ui::Encoder
 {
@@ -21,13 +21,13 @@ public:
     Encoder(QWidget *parent = 0);
 
 public slots:
-    // создать файлы, активировать/деактивировать кнопки
+    // СЃРѕР·РґР°С‚СЊ С„Р°Р№Р»С‹, Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ/РґРµР°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РєРЅРѕРїРєРё
     void ActivateButtons();
 
-    // зашифровать файл
+    // Р·Р°С€РёС„СЂРѕРІР°С‚СЊ С„Р°Р№Р»
     void Encode();
 
-    // расшифровать файл
+    // СЂР°СЃС€РёС„СЂРѕРІР°С‚СЊ С„Р°Р№Р»
     void Decode();
 };
 
